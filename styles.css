@@ -1,0 +1,108 @@
+
+
+body{
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin:0;
+    height: 100vh;
+    color: honeydew;
+}
+button{
+    border: 0;
+    padding: 5px;
+    width: 110px;
+    font-size: 15px;
+    color: lavender;
+    cursor: pointer;
+    border-radius:5px ;
+    background-color: rgb(97, 97, 108);
+    transition: all 0.15s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transform: scale(1.06);
+}
+button:active{
+    transform: scale(0.95);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+    background-color: rgb(39, 38, 38);
+    perspective: 1000px;
+
+
+}
+select{
+    width:150px;
+    height: 30px;
+    margin: 0;
+    margin-left: 30px;
+    padding: 3px;
+}
+h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.screen{
+    height:80px;
+    width:200px;
+    background-color: honeydew;
+    color: rgb(90, 81, 81);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px honeydew;
+    transform: rotateX(-50deg) ;
+}
+.seat{
+    height: 11px;
+    width: 10px;
+    background-color: rgb(206, 202, 202);
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+.seat:not(.occupied ):not(.Li):hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.seat.occupied{
+    background-color: rgb(79, 74, 74);
+}
+.seat.selected{
+    background-color: rgb(126, 199, 223);
+}
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+ul{
+    display: flex;
+    font-size: smaller;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0px 60px 0px;
+}
+p span{
+    color:rgb(126, 199, 223) ;
+}
+p{
+    margin-top: 40px;
+}
+.row{
+    display: flex;
+}
+@media (min-width:800px){
+}

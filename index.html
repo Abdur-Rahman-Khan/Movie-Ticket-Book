@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+        <title>Movie Book</title>
+</head>
+<body>
+    <div class="container">
+        <div class="Pick" style="display: flex;">
+            <h2>Pick a Movie: </h2>
+            <select name="Movies" id="Movies">
+                <option value="100">Joker ($100)</option>
+                <option value="200">Batman ($200)</option>
+                <option value="250">Inception ($250)</option>
+                <option value="300">Avenger ($300)</option>
+          </select></div>
+        <ul >
+            <li style=" display: flex; margin-left: 10px;"> <div class="Li seat"></div> Available</li>
+            <li style=" display: flex ;margin-left: 10px;"> <div class="Li seat selected"></div> Selected</li>
+            <li style=" display: flex; margin-left: 10px;"> <div class="Li seat occupied"></div> Occupied</li>
+        </ul>
+        <div class="screen"><h1 class="movieName" style="text-align: center;">Joker</h1></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <p>Total <span id="noSeats">0</span> seats booked for $<span id="Cost">0</span>.</p>
+    <button class="btn">BookSeats</button>
+    <script src="index.js"></script>
+    </div>
+    
+</body>
+</html>
