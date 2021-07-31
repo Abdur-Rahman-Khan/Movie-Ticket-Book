@@ -29,6 +29,36 @@ button:hover{
 button:active{
     transform: scale(0.95);
 }
+
+h2{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+p span{
+    color:rgb(64, 134, 157) ;
+}
+p{
+    margin-top: 40px;
+}
+select{
+    width:150px;
+    height: 30px;
+    margin: 0;
+    margin-left: 30px;
+    padding: 3px;
+}
+ul{
+    display: flex;
+    font-size: smaller;
+    gap: 10px;
+    padding: 0;
+    margin: 20px 0px 60px 0px;
+}
+
+
+/* Classes */
 .container{
     display: flex;
     justify-content: center;
@@ -42,17 +72,7 @@ button:active{
 
 
 }
-select{
-    width:150px;
-    height: 30px;
-    margin: 0;
-    margin-left: 30px;
-    padding: 3px;
-}
-h2{
-    margin: 0;
-    margin-bottom: 10px;
-}
+
 .screen{
     height:80px;
     width:200px;
@@ -80,7 +100,7 @@ h2{
     background-color: rgb(79, 74, 74);
 }
 .seat.selected{
-    background-color: rgb(126, 199, 223);
+    background-color: rgb(75, 153, 179);
 }
 .seat:nth-last-of-type(2){
     margin-left: 20px;
@@ -88,21 +108,12 @@ h2{
 .seat:nth-of-type(2){
     margin-right: 20px;
 }
-ul{
-    display: flex;
-    font-size: smaller;
-    gap: 10px;
-    padding: 0;
-    margin: 20px 0px 60px 0px;
-}
-p span{
-    color:rgb(126, 199, 223) ;
-}
-p{
-    margin-top: 40px;
-}
+
 .row{
     display: flex;
 }
+
+
+/* Media Query */
 @media (min-width:800px){
 }
